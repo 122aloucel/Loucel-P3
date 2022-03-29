@@ -21,6 +21,8 @@
 */
 
 
+
+
 const vue_app = Vue.createApp({
       // This automatically imports your movies.json file and puts it into
       //   the variable: movies
@@ -34,43 +36,54 @@ const vue_app = Vue.createApp({
             // This holds your movies.json data.
             movies: [],
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-            title: "IMDB" + "Anthony’s Top 8 Movies",
-            owner: "Anthony",
-            github: "https://github.com/122aloucel/Loucel-P3"
+            title: "IMDB + Chris’s Top 8 Movies",
+            owner: "Chris",
+            github: "https://122ccatalano.github.io/Catalano-p3/"
       }
     },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
-            getMonthText(dataArray){
-              switch (dateArray[1])
-                case 0: day = "January";
+            getMonthText(dateArray) {
+              switch (dateArray[1]) {
+                case 1: month = "January";
                 break;
-                case 1: day = "February";
+                case 2: month = "Feburary";
                 break;
-                case 2: day = "March";
+                case 3: month = "March";
                 break;
-                case 3: day = "April";
+                case 4: month = "April";
                 break;
-                case 4: day = "May";
+                case 5: month = "May";
                 break;
-                case 5: day = "June";
+                case 6: month = "June";
                 break;
-                case 6: day = "July";
+                case 7: month = "July";
                 break;
-                case 7: day = "August";
+                case 8: month = "August";
                 break;
-                case 8: day = "September";
+                case 9: month = "September";
                 break;
-                case 9: day = "October";
+                case 10: month = "October";
                 break;
-                case 10: day = "November";
+                case 11: month = "November";
                 break;
-                case 11: day = "December";
+                case 12: month = "December";
                 break;
                 return month;
+              }
+
+              return month + dateArray[0] + dateArray[2];
+            },
+            like(index) {
+              like = like++;
+            },
+            dislike(index) {
+              like = like--;
+            },
+            posterClick(index) {
+
             }
 
-          return month + dateArray[0] + dateArray[2]
       }
 })
 
