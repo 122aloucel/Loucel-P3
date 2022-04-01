@@ -75,15 +75,10 @@ const vue_app = Vue.createApp({
               return month + " " + dateArray[2] + " " + dateArray[1];
             },
             posterClick(index) {
-              movies[index].posters[0]
-              movies[index].posters[1]
-              movies[index].posters[2]
+              this.movies[index].posterindex++;
 
             },
-            timeText(minutes) {
-
-            }
-
+            
       }
 })
 
