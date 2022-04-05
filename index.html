@@ -39,7 +39,7 @@
 	            <div class="thumbnail">
 
 						<img class="poster"  :src="movies[index].posters[movie.posterindex]" @click="posterClick(index)"/>
-						<div class="imageInfo">{{ movies[index].posterindex }}</div>
+						<div class="imageInfo">Poster {{ movies[index].posterIndex }} of {{ movies[index].posters.length - 1 }}</div>
 
 						<p class="title">{{ movies[index].title }}  ({{ movies[index].country }})</p>
 						<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{ movies[index].iscore }} </p>
